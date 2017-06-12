@@ -6,41 +6,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Calculate</h1>    
+    <h1>Calculate</h1>
     <form>
         <p>
           <label for="numbers">Numbers:</label>
-          <input type="text" id="numbers" name="numbers">
+          <input type="text" id="fill" name="numbers">
         </p>
         <p>
           <label for="operation">Operation:</label>
-          <select id="operation">
+          <select id="select">
             <option value="sum">+</option>
             <option value="substract">-</option>
             <option value="multiply">*</option>
             <option value="divide">/</option>
           </select>
         </p>
-        <button type="button" id="calculate">Calculate</button>
-        <p class="result">Result: <strong id="result">-</strong></p>
+        <button type="button" id="calculate" onclick="string()">Calculate</button>
+        <p class="result">Result: <strong id="answer">-</strong></p>
     </form>
-    <h2>Test Examples</h2>           
-    <pre>    Numbers:    30, 2, 5
-    Operation:  +
-    Result:     37        ( = 30 + 2 + 5 )
-    
-    Numbers:    30, 2, 5
-    Operation:  -
-    Result:     23        ( = 30 - 2 - 5 )
-    
-    Numbers:    30, 2, 5
-    Operation:  *
-    Result:     300       ( = 30 * 2 * 5 )
-    
-    Numbers:    30, 2, 5
-    Operation:  /
-    Result:     3         ( = 30 / 2 / 5 )
-    </pre>
     <script src="js/script.js"></script>
 </body>
 </html>
